@@ -8,6 +8,7 @@
     --button-main: #FEA439;
 }
 
+
 a{
     text-decoration: none;
     color: #333333;
@@ -81,8 +82,7 @@ header{
 
 .hero{
     width: 100%;
-    height: auto;
-    min-height: 800px;
+    height: 700px;
     background: linear-gradient(-120deg, rgba(237,254,252,1) 0%, rgba(254,246,236,1) 100%);
     padding-top: 60px;
 }
@@ -97,9 +97,10 @@ header{
 }
 
 .hero__container{
-    margin-top: 50px;
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero__text__title{
@@ -135,4 +136,139 @@ header{
     color: var(--white);
 }
 
+.hero__image{
+    max-width: 450px;
+    position: relative;
+}
+/* 
+.hero__image::before{
+    content: "";
+    width: 650px;
+    height: 100%;
+    position: absolute;
+    background: url("../images/decor-hero-section.svg")
+} */
+
 /* Hero */
+
+
+/* About Section */
+
+.about{
+    width: 100%;
+    padding: 60px 0;
+    background: #fff;
+}
+
+.section__header{
+    text-align: center;
+}
+
+
+.section__title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.section__subtitle{
+    font-size: 21px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-weight: 100;
+}
+
+.about__image img{
+    max-width: 500px;
+}
+
+.about__body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info{
+    max-width: 670px;
+    width: 100%;
+}
+
+.info__name{
+    text-align: center;
+    max-width: 414px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 25px 70px;
+    background: linear-gradient(90deg, rgba(237,254,252,1) 0%, rgba(254,246,236,1) 100%);
+}
+
+.info__main__name{
+    color: #000;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 11px;
+}
+
+.info__category{
+    color: #000;
+    font-weight: 200;
+}
+
+.info__slogan{
+    margin-top: 30px;
+    max-width: 500px;
+    width: 100%;
+    line-height: 160%;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.info__counter{
+    padding: 25px 70px;
+    background: #50D6CD;
+    max-width: 430px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.counter__exp, .counter__students{
+    text-align: center;
+}
+
+.exp__count, .students__count{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.exp__title, .student__title{
+    font-size: 18px;
+    max-width: 133px;
+    width: 100%;
+}
+
+.info__list{
+    margin-top: 30px;
+}
+
+.info__list ul{
+    list-style-type: none;
+}
+
+.info__list ul li{
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.info__list img{
+    max-width: 30px;
+    padding-right: 20px;
+}
+
+/* About Section */
