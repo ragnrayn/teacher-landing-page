@@ -13,8 +13,8 @@
 }
 
 a{
-    text-decoration: none;
-    color: #333333;
+    text-decoration: none !important;
+    color: #333333 !important;
 }
 
 a:hover{
@@ -284,9 +284,9 @@ header{
 
 .way{
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background: linear-gradient(-120deg, rgba(237,254,252,1) 0%, rgba(254,246,236,1) 100%);
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 
@@ -454,6 +454,10 @@ header{
    position: relative;
 }
 
+.prefooter__image img{
+    height: 100%;
+}
+
 .prefooter__image::before{
     content: "";
     width: 100%;
@@ -506,3 +510,70 @@ header{
 }
 
 /* Prefooter Section */
+
+
+/* Footer Section */
+
+footer{
+    width: 100%;
+    padding: 60px 0;
+    background: #fff;
+}
+
+.footer__container{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo__description{
+    font-size: 20px;
+    color: #000;
+    max-width: 380px;
+    width: 100%;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0 !important;
+}
+
+.footer__menu ul li:first-child{
+    margin-top: 0;
+}
+.footer__menu ul li{
+    margin-top: 15px;
+}   
+
+.footer__menu ul li a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.footer__menu ul li a:hover{
+    color: var(--button-main);
+}
+
+.footer__address img{
+    max-width: 20px;
+}
+
+.footer__address ul li{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #666666;
+}
+
+.footer__wave{
+    background-image: url(../images/wave-hero.svg);
+    background-repeat: repeat;  
+    width: 100%;
+    height: auto;
+    min-height: 22px;
+    margin-top: 50px;
+}
+
+
+/* Footer Section */
