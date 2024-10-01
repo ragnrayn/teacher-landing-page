@@ -8,6 +8,9 @@
     --button-main: #FEA439;
 }
 
+.reverse{
+    flex-direction: row-reverse;
+}
 
 a{
     text-decoration: none;
@@ -185,12 +188,15 @@ header{
 .about__body{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
 }
 
-.about__info{
+/* .about__info{
     max-width: 670px;
     width: 100%;
-}
+} */
 
 .info__name{
     text-align: center;
@@ -272,3 +278,231 @@ header{
 }
 
 /* About Section */
+
+
+/* Way Section */
+
+.way{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(-120deg, rgba(237,254,252,1) 0%, rgba(254,246,236,1) 100%);
+    padding-top: 60px;
+}
+
+
+/* Accordion styles */
+
+.accordion-button{
+    background: #FEA439 !important;
+    color: #fff !important;
+    font-weight: bold;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    color: #fff;
+}
+
+.accordion{
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.accordion-button:not(.collapsed)::after{
+    color: red;
+}
+
+/* Accordion styles */
+
+/* Way Section */
+
+
+/* Program Section  */
+
+.program{
+    width: 100%;
+    padding: 60px 0;
+    background: #fff;
+}
+
+.program__item{
+    max-width: 420px;
+    width: 100%;
+}
+.program__image{
+    margin-bottom: 30px;
+}
+
+.program__title{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.program__description{
+    font-size: 21px;
+    margin-bottom: 60px;
+    height: 100px;
+}
+
+.program__data{
+    width: 100%;
+    border-radius: 30px;
+    background: #19C1B6;
+    color: white;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data__item{
+    max-width: 122px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.data__item__title{
+    font-size: 28px;
+    font-weight: bold;
+}
+.program__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Program Section */
+
+
+/* Join Section */
+
+.join{
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(rgba(44, 196, 185, .7), rgba(44, 196, 185, .7)), url("../images/join-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section__title_white{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.join__description{
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+/* Joing Section */
+
+/* Education Section */
+
+.education{
+    width: 100%;
+    background: #fff;
+    padding: 60px 0;
+}
+
+.carousel-item{
+    text-align: center;
+}
+.carousel-item img{
+    max-width: 350px;
+}
+
+.carousel-indicators button{
+    background: #EEEEEE !important;
+}
+
+.carousel-indicators .active{
+    background: #000 !important;
+}
+
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Education Section */
+
+
+/* Prefooter Section */
+
+
+.prefooter{
+    background: linear-gradient(rgba(44, 196, 185, .7), rgba(44, 196, 185, .7)), url("../images/prefooter__bg.png");
+    background-size: cover;
+    background-position: top left;
+}
+
+.container__prefooter{
+    display: flex;
+}
+
+.prefooter__image{
+   position: relative;
+}
+
+.prefooter__image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(150, 150, 150, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.prefooter__block{
+    padding: 80px 110px;
+}
+
+.prefooter__title{
+    font-size: 43px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+
+.prefooter__description{
+    font-size: 21px;
+    max-width: 641px;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.prefooter__icon img{
+    max-width: 130px;
+}
+
+
+.prefooter__link a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 21px;
+}
+.prefooter__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.prefooter__description_gap{
+    margin-top: 50px;
+}
+
+/* Prefooter Section */
