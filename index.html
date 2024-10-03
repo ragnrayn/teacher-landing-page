@@ -12,7 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Навчайко</title>
   </head>
 
@@ -48,17 +49,27 @@
       <div class="hero__wave"></div>
       <div class="container">
         <div class="hero__container">
-          <div class="hero__text">
+          <div
+            class="hero__text"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div class="hero__text__title">Дошкільна підготовка дітей</div>
             <div class="hero__text__main">Найкращі дошкільні заняття</div>
             <div class="hero__text__subtitle">
               Новий навчальний рік <span>2024-2025</span>
             </div>
             <div class="hero__text__button">
-              <a href="#" class="hero__text__button_styling phone-btn">Звʼязатись</a>
+              <a href="#" class="hero__text__button_styling phone-btn"
+                >Звʼязатись</a
+              >
             </div>
           </div>
-          <div class="hero__image">
+          <div
+            class="hero__image"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img src="./images/hero-image.png" alt="" />
           </div>
         </div>
@@ -75,10 +86,18 @@
           </div>
         </div>
         <div class="about__body">
-          <div class="about__image">
+          <div
+            class="about__image"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img src="./images/teacher.png" alt="" />
           </div>
-          <div class="about__info">
+          <div
+            class="about__info"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div class="info__name">
               <div class="info__main__name">Сергєєва Наталія</div>
               <div class="info__category">Вихователь 1 категорії</div>
@@ -120,10 +139,18 @@
           </div>
         </div>
         <div class="about__body reverse">
-          <div class="about__image">
+          <div
+            class="about__image"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img src="./images/second-teacher.png" alt="" />
           </div>
-          <div class="about__info">
+          <div
+            class="about__info"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div class="info__name">
               <div class="info__main__name">Герасевич Олена</div>
               <div class="info__category">Вихователь вищої категорії</div>
@@ -258,7 +285,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Художньо-продуктивна діяльність
+                Художньо - продуктивна діяльність
               </button>
             </h2>
             <div
@@ -292,7 +319,7 @@
                 aria-expanded="false"
                 aria-controls="collapseFour"
               >
-                Дослідно- експериментувальна діяльність
+                Дослідно - експериментувальна діяльність
               </button>
             </h2>
             <div
@@ -623,5 +650,7 @@
 
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

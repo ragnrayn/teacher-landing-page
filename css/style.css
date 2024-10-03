@@ -53,6 +53,7 @@ header{
 .container{
     max-width: 1120px;
     margin: 0 auto;
+    padding: 0 !important;
 }
 
 .header__body{
@@ -161,6 +162,8 @@ header{
     width: 100%;
     padding: 60px 0;
     background: #fff;
+
+    overflow: hidden;
 }
 
 .section__header{

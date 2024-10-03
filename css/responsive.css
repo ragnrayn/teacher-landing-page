@@ -1,6 +1,12 @@
 /* 650 Media */
 
 @media screen and (max-width: 650px) {
+
+    #header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .header__menu ul{
         display: none;
     }
@@ -49,6 +55,18 @@
 
     .prefooter__image{
         display: none;
+    }    
+
+    .prefooter__block{
+        padding: 35px;
+    }
+
+    .hero__image img{
+        max-width: 250px;
+    }
+
+    footer{
+        padding: 60px 15px;
     }
 }
 
