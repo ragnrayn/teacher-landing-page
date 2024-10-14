@@ -6,6 +6,12 @@
     --white: #fff;
     --decor-text: #1DC1B6;
     --button-main: #FEA439;
+    --grey-link: #333;
+    --dark-grey: #666666;
+    --header-link: #FEF8EC;
+    --info-counter: #50D6CD;
+    --main-red: red;
+    --clean-silver: #EEEEEE;
 }
 
 .reverse{
@@ -14,11 +20,11 @@
 
 a{
     text-decoration: none !important;
-    color: #333333 !important;
+    color: var(--grey-link) !important;
 }
 
 a:hover{
-    color: #666666;
+    color: var(--dark-grey);
 }
 
 img{
@@ -76,7 +82,7 @@ header{
 .header__contact a{
     display: inline-block;
     padding: 18px 40px;
-    background: #FEF8EC;
+    background: var(--header-link);
     border-radius: 80px;
 }
 
@@ -161,7 +167,7 @@ header{
 .about{
     width: 100%;
     padding: 60px 0;
-    background: #fff;
+    background: var(--white);
 
     overflow: hidden;
 }
@@ -212,14 +218,14 @@ header{
 }
 
 .info__main__name{
-    color: #000;
+    color: var(--black);
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 11px;
 }
 
 .info__category{
-    color: #000;
+    color: var(--black);
     font-weight: 200;
 }
 
@@ -234,12 +240,12 @@ header{
 
 .info__counter{
     padding: 25px 70px;
-    background: #50D6CD;
+    background: var(--info-counter);
     max-width: 430px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 30px;
-    color: #fff;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -297,14 +303,14 @@ header{
 
 .accordion-button{
     background: #FEA439 !important;
-    color: #fff !important;
+    color: var(--white) !important;
     font-weight: bold;
     justify-content: center !important;
     align-items: center !important;
 }
 
 .accordion-button:not(.collapsed)::after{
-    color: #fff;
+    color: var(--white);
 }
 
 .accordion{
@@ -313,7 +319,7 @@ header{
 }
 
 .accordion-button:not(.collapsed)::after{
-    color: red;
+    color: var(--main-red);
 }
 
 /* Accordion styles */
@@ -326,7 +332,7 @@ header{
 .program{
     width: 100%;
     padding: 60px 0;
-    background: #fff;
+    background: var(--white);
 }
 
 .program__item{
@@ -339,7 +345,7 @@ header{
 
 .program__title{
     font-size: 30px;
-    color: #000;
+    color: var(--black);
     font-weight: bold;
 }
 
@@ -392,11 +398,11 @@ header{
     background: linear-gradient(rgba(44, 196, 185, .7), rgba(44, 196, 185, .7)), url("../images/join-image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: var(--white);
 }
 
 .section__title_white{
-    color: #fff;
+    color: var(--white);
     margin-bottom: 30px;
 }
 
@@ -412,7 +418,7 @@ header{
 
 .education{
     width: 100%;
-    background: #fff;
+    background: var(--white);
     padding: 60px 0;
 }
 
@@ -424,11 +430,11 @@ header{
 }
 
 .carousel-indicators button{
-    background: #EEEEEE !important;
+    background: var(--clean-silver) !important;
 }
 
 .carousel-indicators .active{
-    background: #000 !important;
+    background: var(--button-main) !important;
 }
 
 .centered{
@@ -478,7 +484,7 @@ header{
 
 .prefooter__title{
     font-size: 43px;
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     margin-bottom: 65px;
 }
@@ -487,17 +493,19 @@ header{
     font-size: 21px;
     max-width: 641px;
     width: 100%;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 50px;
 }
 
 .prefooter__icon img{
-    max-width: 130px;
+    /* max-width: 130px; */
+    width: 95px;
+    height: 95px;
 }
 
 
 .prefooter__link a{
-    color: #fff !important;
+    color: var(--white) !important;
     text-decoration: none !important;
     font-size: 21px;
 }
@@ -520,7 +528,7 @@ header{
 footer{
     width: 100%;
     padding: 60px 0;
-    background: #fff;
+    background: var(--white);
 }
 
 .footer__container{
@@ -551,7 +559,7 @@ ul{
 }   
 
 .footer__menu ul li a{
-    color: #666666;
+    color: var(--dark-grey);
     text-decoration: none;
 }
 
@@ -566,7 +574,7 @@ ul{
 .footer__address ul li{
     margin-top: 15px;
     font-size: 20px;
-    color: #666666;
+    color: var(--dark-grey);
 }
 
 .footer__wave{
